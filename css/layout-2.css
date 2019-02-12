@@ -1,0 +1,45 @@
+#container {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;
+    grid-gap: 10px;
+    
+    grid-template-areas: 
+        "header login"
+        "menu post"
+        "main sign-up";
+}
+
+#title {
+    grid-area: header;
+    background-color: #51ff037d;
+}
+
+#login {
+    grid-area: login;
+    background-color: #f283e1;
+}
+
+#menu {
+    grid-area: menu;
+    background-color: #e0b1ed;
+}
+
+#posts {
+    grid-area: main;
+    background-color: #b94444;
+}
+
+#post {
+    grid-area: post;
+    background-color: #fdfd54;
+}
+
+#sign-up {
+    grid-area: sign-up;
+    background-color: #5bcdff;
+}
